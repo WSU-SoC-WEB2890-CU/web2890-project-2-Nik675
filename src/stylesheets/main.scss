@@ -6,14 +6,13 @@
 @use 'components/animations.scss';
 @use 'components/buttons.scss';
 @use 'components/mixins.scss';
+@use 'components/modal.scss';
 @use 'components/typography.scss';
-@use 'components/forms.scss';
 
 
 // SECTIONS 
 @use 'sections/navbar.scss';
 @use 'sections/home.scss';
-@use 'sections/menu.scss';
 @use 'sections/order_online.scss';
 @use 'sections/our_story.scss';
 @use 'sections/contact_info.scss';

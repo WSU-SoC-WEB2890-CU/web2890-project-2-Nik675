@@ -1,0 +1,43 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.hero-section {
+    margin-top: calc(2rem + 40px);
+    .hero-text-div {
+        background-size: cover;
+        margin-top: calc(3rem + 40px);
+        
+    }
+
+    .bg-image {
+        background-image: url('../../resources/img/food/hero.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 400%;
+        width: 100%;
+        
+
+    }
+    .hero-button {
+        font-weight: 700;
+        border: 0.1rem solid rgba($white, 0.6);
+        background-color: $white;
+        display: block;
+    
+        &:hover {
+            color: gray;
+        }
+    }
+    p {
+        font-size: 1.1em;
+    }
+    
+}
+
+.food-preview{
+    width: 70%;
+    margin-left: 15%;
+}
+
