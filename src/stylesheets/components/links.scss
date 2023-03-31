@@ -1,0 +1,7 @@
+@use '../custom.scss';
+.no-underline{
+    text-decoration: none;
+    &:hover{
+        color: #c92020;
+    }
+}
