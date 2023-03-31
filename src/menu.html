@@ -18,9 +18,9 @@
             <a class="navbar-brand" href="#">
                 <img src="resources/img/logos/Javiers-logo.png" alt="logo image">
             </a>
-            <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button"
+            <button class="navbar-toggler ms-auto" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon ms-auto"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
@@ -33,19 +33,36 @@
             </div>
         </div>
     </nav>
+    <section class="hero-section">
+        <div class="p-5 text-center bg-image">
+            <div class="hero-text-div" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <h1 class="mb-3">Check out our menu!</h1>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <button class="btn hero-button" type="button" data-bs-toggle="modal"
+                                data-bs-target="#menuModal">Full
+                                menu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="menu-section">
         <div class="container py-5">
             <div class="row">
-                <div class="col-12 pt-10">
+                <div class="col-12">
                     <h3 class="text-center">JAVIER’S APPETIZERS</h3>
                     <hr class="accent my-5">
                 </div>
                 <div class="card-columns">
                     <div class="card-body">
                         <span class="float-right font-weight-bold">$9.99</span>
-                        
+
                         <h6 class="text-truncate">Nachos Supremos</h6>
-                        <p class="small">It’s a big mound of tortilla chips topped with beef or chicken, beans, jalapeños, Monterrey jack cheddar cheese. With ground beef add $1.99</p>
+                        <p class="small">It’s a big mound of tortilla chips topped with beef or chicken, beans,
+                            jalapeños, Monterrey jack cheddar cheese. With ground beef add $1.99</p>
                     </div>
                     <div class="card-body">
                         <span class="float-right font-weight-bold">$7.99</span>
@@ -86,10 +103,11 @@
                     </div>
 
                 </div>
-                
+
                 <div class="col-12 mt-4">
                     <h3 class="text-center">LUNCH MENU</h3>
-                    <p class="small text-center">Served until 3:30 p.m. All Lunch include rice and beans. - NO SUBSTITUTIONS PLEASE Any extra add $1.99</p>
+                    <p class="small text-center">Served until 3:30 p.m. All Lunch include rice and beans. - NO
+                        SUBSTITUTIONS PLEASE Any extra add $1.99</p>
                     <hr class="accent my-5">
                 </div>
                 <div class="card-columns">
@@ -100,7 +118,9 @@
                     <div class="card-body">
                         <span class="float-right font-weight-bold">$11.99 </span>
                         <h6>One Tostada & One Taco</h6>
-                        <p class="small"> Braised low and slow, resulting in meat that is deeply flavored, sublimely succulent and tender as can be imagined, yet maintaining a wonderful texture. Served on a bed of garlic smashed potatoes. Served with choice of additional side. </p>
+                        <p class="small"> Braised low and slow, resulting in meat that is deeply flavored, sublimely
+                            succulent and tender as can be imagined, yet maintaining a wonderful texture. Served on a
+                            bed of garlic smashed potatoes. Served with choice of additional side. </p>
                     </div>
                     <div class="card-body">
                         <span class="float-right font-weight-bold">$12.49</span>
@@ -111,7 +131,6 @@
             </div>
         </div>
     </section>
-    
     <!-- THE FOOTER SECTION -->
     <footer class="footer">
         <div class="footer-bottom pt-5 pb-5">
@@ -127,6 +146,22 @@
             </div>
         </div>
     </footer>
+    <div class="modal" id="menuModal" tabindex="-1" aria-labelledby="menuModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModalLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <embed src="././resources/pdfs/Javiers_Menu_2022.pdf" frameborder="0" class="menu">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./scripts/main.js" type="module"></script>
 </body>
 
